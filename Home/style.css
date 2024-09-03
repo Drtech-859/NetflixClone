@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background: linear-gradient(black, transparent);
+    
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.navbar-logo {
+    width: 10em;
+    height: 8em;
+    margin-right: auto;
+    margin-left: 9em;
+}
+
+.nav-btn {
+    padding: 10px 14px;
+    border-radius: 6px;
+    line-height: 0.9;
+    font-size: 16px;
+    margin-right: 1rem;
+    color: white;
+    border: none;
+    text-wrap: nowrap;
+}
+
+.language-btn>i {
+    font-size: 14px;
+    margin: 0 4px;
+}
+
+.language-btn {
+    background-color: black;
+    border: 1px solid gray;
+}
+
+.login-btn {
+    margin-right: 9em;
+    background-color: red;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.login-btn:hover {
+    background-color: rgb(193, 0, 0);
+}
+
+.section1 {
+    background-image: url('../images/logos/Netflix-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    width: 100vw;
+    height: 83vh;
+    text-align: center;
+    padding-top: 5rem;
+    background: transparent black;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, black, red, black) 1;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.banner>h1 {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 800;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner>p {
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.banner>p:nth-child(3) {
+    font-size: 1.2rem;
+}
+
+.banner input {
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 360px;
+    flex-wrap: wrap;
+    margin: 1rem;
+    border-radius: 6px;
+    border: none;
+}
+
+.banner button {
+    text-wrap: nowrap;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    background-color: red;
+    font-size: 1.2rem;
+    border: none;
+    transition: 200ms;
+    color: white;
+    
+}
+
+
+.banner button a{
+    color: white;
+    text-decoration: none;
+}
+
+.banner button:hover {
+    background-color: rgb(193, 0, 0);
+
+}
+
+.banner input:hover {
+    cursor: text;
+}
+
+#trending {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 8rem;
+    position: relative;
+}
+
+
+
+.trending-title {
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.trending-movies {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2rem 0rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    justify-content: start;
+    align-items: center;
+}
+
+.movie {
+    background-image: url('https://occ-0-4994-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABagcqGQ10l43PUj28dBZDGebLm_wbIEYeqhE5CRSGqYYlknfO3a9H0LYpksyZMiuqGMYofI3YCZ7RorAFStJkwTGSI5GKa_RMqPUHNSCLpWHifune8BiNLnkePTnApcGQLhnVnjXeQUQFeGh2gBPYiJjIfz8yXNNr5-h1jdFp0bWaFliYOAI32kLUbbDZ-Hkyh5Zos-7T2NiZgwjrly0kRcF_X5zE__TWfjGCp9o2AMqk-bjZmeSryNO2GE5HGceOuYG2EcE9Nh1ycej1DcBY-eFD97Bp6HxMHhum_cirCJP1w0xZLGzpOpDJaUdlyeuu3mu8vOxVf3Zz7w32qpgZ6k.jpg?r=2b9');
+    width: 12rem;
+    height: 16rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0rem 2rem;
+    flex-shrink: 0;
+    border-radius: 8px;
+    transition: 200ms;
+}
+
+
+.trending-movies {
+    list-style: none;
+    counter-reset: custom-counter;
+}
+
+.trending-movies li {
+    counter-increment: custom-counter;
+    position: relative;
+    margin-bottom: 1rem;/
+}
+
+.trending-movies li::before {
+    content: counter(custom-counter);
+    position: absolute;
+    color: black;
+    text-shadow: -1px -1px white, 1px -1px white, -1px 1px white, 1px 1px white;
+    bottom: 0;
+    left: -0.1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6.5rem;
+    z-index: 1;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.reason{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 8rem;
+    position: relative; 
+}
+.reason>p{
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.reason-cards{
+    display: flex;
+    gap: 8px;
+}
+
+.reason-card{
+    min-width: 18em;
+    width: 20em;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    gap: 10px;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right bottom,rgb(18, 18, 69),rgb(71, 26, 26));
+}
+
+.reason-card>p:first-of-type{
+    font-weight: bold;
+    font-size: 20px;
+}
+.reason-card>p:last-of-type{
+    font-size: 12px;
+    width: 80%;
+}
+.reason-card img{
+    width: 50px;
+    align-self: end;
+}
+
+.footer{
+    background-color: black;
+    color: rgb(131, 131, 131);
+    display: grid;
+    grid-template: 3/4;
+    padding: 2rem 5rem;
+    grid-gap: 1.5rem; 
+    justify-content: start;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.footer>p{
+    font-size: 1.5rem;
+    margin:0.2rem 0;
+}
+
+.footer-options{
+    margin:1rem 0;
+    display: flex;
+    flex-direction:column;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
