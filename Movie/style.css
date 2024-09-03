@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
 }
 
@@ -27,7 +27,6 @@ nav {
     height: 100%;
     display: flex;
     align-items: center;
-
     justify-content: end;
 }
 
@@ -80,31 +79,90 @@ nav>p {
     background-position: center;
     color: white;
     padding: 2rem 3rem;
+    z-index: -1;
 }
 
-.details{
+.details {
     display: flex;
     flex-direction: column;
     width: 50%;
     min-width: 520px;
 }
 
-.details>h1{
+.details>h1 {
     font-size: 5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0rem 0rem 3rem;
+    line-height: 2;
 }
 
-.details>p{
+.details>p {
     margin: 1rem;
     font-size: 1.3rem;
 }
 
-.details>.details-name{
-    font-size:1.8rem ;
+.details>.details-name {
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
-.details>p>span{
+.details>p>span {
     color: gray;
+    margin-top: .5rem;
+}
+
+.join {
+    width: 80%;
+    height: 5rem;
+    background-color: rgb(33, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    padding: 0 2rem;
+    border-radius: 4px;
+}
+
+.join>img{
+    width: 125px;
+    height: 50px;
+}
+
+.join>p{
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+.join>button{
+    color: white;
+    border: none;
+    background-color: red;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.join>button:hover{
+    background-color: rgb(193, 0, 0);
+}
+
+.after-join{
+    width: 80%;
+    margin: 2rem auto ;
+    color: gray;
+    font-size: 1.3rem;
+    text-align: center;  
+}
+
+.after-join>hr{
+    height: 1px;
+    border: none;
+    background-color: gray;
+}
+
+.after-join>p{
+    width: 50%;
+    margin : 2rem auto ;
 }
